@@ -208,22 +208,26 @@ footer {
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.5rem; /* Reduz o tamanho do título */
-    }
+@media (max-width: 768px) {  
     .container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
+    .title {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+  
     nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    
+       nav ul li {
+        margin-left: 0; /* Remove a margem esquerda dos itens */
+        margin-bottom: 10px; /* Adiciona espaço inferior entre os itens */
     }
 
     .contact-item {
