@@ -36,7 +36,6 @@ header {
     width: 100px; /* Tamanho da logo */
     margin-right: 20px; /* Espaço entre a logo e o título */
     margin-bottom: 20px;
-
 }
 
 .title {
@@ -115,7 +114,6 @@ h2 {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
-
 }
 
 .contact-item:hover {
@@ -136,6 +134,7 @@ h2 {
     color: #fff;
     margin-top: 10px;
 }
+
 .contact-item a {
     color: #ffcc00;
     text-decoration: none; /* Remove a linha de sublinhado */
@@ -214,66 +213,66 @@ footer {
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: column; /* Alinha logo e título verticalmente */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Adiciona espaço inferior */
     }
 
     .title {
         font-size: 1.5rem; /* Reduz o tamanho do título */
     }
-  
+
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Muda a direção do nav para coluna */
+        align-items: center; /* Centraliza os itens */
     }
 
-    
-       nav ul li {
+    nav ul li {
         margin-left: 0; /* Remove a margem esquerda dos itens */
         margin-bottom: 10px; /* Adiciona espaço inferior entre os itens */
     }
 
-    .contact-item {
-        width: 90%;
-        max-width: 300px;
+    .carousel {
+        max-width: 90%; /* Ajusta a largura do carrossel em telas pequenas */
     }
 
-    h2 {
-        font-size: 1.5rem;
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease; /* Transição suave */
+    }
+    
+    .carousel-item {
+        min-width: 100%; /* Cada item ocupa 100% da largura do carrossel */
+        transition: opacity 0.5s ease; /* Transição suave de opacidade, se necessário */
     }
 
-    .gmap_canvas {
-        height: 300px;
+    .carousel-control {
+        font-size: 1.5em; /* Reduz o tamanho dos botões no carrossel */
     }
 
-    .title {
-        font-size: 1.5rem;
-        text-align: center; /* Centraliza em telas menores */
+    .info-mapa {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center; /* Centraliza os elementos verticalmente */
+    }
+
+    .map-container {
+        width: 90%; /* 90% em telas pequenas */
+        margin-bottom: 20px; /* Adiciona espaço inferior entre os itens */
     }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 1.3rem; /* Reduz ainda mais o tamanho do título em telas muito pequenas */
+        font-size: 1.3rem; /* Reduz ainda mais o tamanho do título */
     }
 
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contact-item p {
-        font-size: 12px;
-    }
-
-    .funcionamento table {
-        width: 100%;
+    .carousel-control {
+        font-size: 1.2em; /* Reduz o tamanho dos botões no carrossel */
     }
 }
