@@ -235,6 +235,11 @@ footer {
     .gmap_canvas {
         height: 300px;
     }
+
+      .title {
+        font-size: 1.5rem;
+        text-align: center; /* Centraliza em telas menores */
+      }
 }
 
 @media (max-width: 480px) {
@@ -253,5 +258,9 @@ footer {
 
     .funcionamento table {
         width: 100%;
+    }
+    .title {
+        font-size: 1.2rem;
+        text-align: center;
     }
 }
