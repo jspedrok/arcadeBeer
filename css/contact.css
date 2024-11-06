@@ -209,6 +209,9 @@ footer {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+     title {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -243,6 +246,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .title {
+        font-size: 1.3rem; /* Reduz ainda mais o tamanho do título */
+    }
     h2 {
         font-size: 1.2rem;
     }
@@ -259,8 +265,5 @@ footer {
     .funcionamento table {
         width: 100%;
     }
-    .title {
-        font-size: 1.2rem;
-        text-align: center;
-    }
+     
 }
