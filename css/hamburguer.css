@@ -1,0 +1,88 @@
+/* Botão de menu hamburger */
+.menu-toggle {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    left: 24px;
+    display: none; /* Inicialmente escondido */
+    z-index: 1000; /* Garante que fique na frente do carrossel */
+}
+
+/* Estilo do botão de fechar */
+.close-btn {
+    font-size: 1.5rem;
+    background: black; /* Cor preta para o botão */
+    color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Move o botão hamburger para o lado esquerdo da tela */
+    display: none; /* Esconde o botão em telas grandes */
+    z-index: 1000;
+}
+
+/* Menu de navegação padrão */
+nav {
+    display: flex; /* Exibe os itens em linha em telas grandes */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex; /* Exibe os itens em linha */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaço entre os itens do menu */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    /* Esconde o menu normal e exibe o botão hamburger */
+    nav {
+        display: none; /* Esconde a navegação em telas pequenas */
+    }
+
+    .menu-toggle {
+        display: block; /* Exibe o botão hamburger em telas pequenas */
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        background-color: #ffcc00;
+    }
+
+    .nav-links ul li {
+        margin: 1rem 0;
+    }
+}
+
+/* Adicionando uma regra para esconder o menu hamburger em telas grandes */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Esconde o botão hamburger em telas maiores */
+    }
+}

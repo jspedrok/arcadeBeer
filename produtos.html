@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/hamburguer.css">
+    <link rel="icon" href="./images/1729530328691.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="./images/1729530328691.png" alt="Logo" class="logo">
+                <h1 class="title">Bar Arcade Beer</h1>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Quem Somos?</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="loader-wrapper">
+        <div class="packman"></div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+    <main>
+        <section class="produtos" id="combos">
+            <h2>Porções</h2>
+            <div class="produtos-container">
+                <div class="produtos-container">
+                    <div class="informacao">
+                        <img src="./images/batata_cheddar.jpg" alt="Combo Família" class="produto-imagem">
+                        <h3>Batata Frita com Cheddar & Bacon</h3>
+                        <p>500g de Batata frita+ cheddar + Bacon</p>
+                        <p><span>R$ 64,90</span> <del>R$ 69,90</del></p>
+                    </div>
+                <div class="informacao">
+                    <img src="./images/contra_mandioca.jpg" alt="Combo Arcade Beer" class="produto-imagem">
+                    <h3>Contra Filé C/ Mandioca Cozida Na Manteiga</h3>
+                    <p>400 gramas de Contra Filé + mandioca cozida</p>
+                    <p><span>R$ 64,90</span> <del>R$ 72,90</del></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/isca.jpg" alt="Combo 5 Espetos" class="produto-imagem">
+                    <h3>Isca de Tilápia</h3>
+                    <p>Isca de Tilápia C/ Molho de alho da casa</p>
+                    <p><span>R$ 84,90</span> <del>R$ 92,90</del></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos" id="burgers">
+            <h2>Burguer</h2>
+            <div class="produtos-container">
+                <div class="informacao">
+                    <img src="./images/burguer_chicken.jpg" alt="Burguer Chicken 64" class="produto-imagem">
+                    <h3>Burguer Chicken 64</h3>
+                    <p>Pão Francês, Frango Empanado, Sour Cream, Cebola Roxa e Alface</p>
+                    <p><span>R$ 24,90</span></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/hamb.jpg" alt="Play Arcade Cheddar" class="produto-imagem">
+                    <h3>Play Arcade Cheddar</h3>
+                    <p>Pão Australiano, Blend de 90 Gramas, Cheddar, Bacon, Picles, Cebola Caramelizada, Alface e Mais Cheddar</p>
+                    <p><span>R$ 25,90</span></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/the_lost_burguer.jpg" alt="The Lost Burguer" class="produto-imagem">
+                    <h3>The Lost Burguer</h3>
+                    <p>Pão Brioche, Blend 90 Gramas, Cheddar, Molho da Casa, Picles, Cebola Roxa, Alface, Bacon</p>
+                    <p><span>R$ 25,90</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos" id="espetos">
+            <h2>Espetos</h2>
+            <div class="produtos-container">
+                <div class="informacao">
+                    <img src="./images/combo_familia.jpg" alt="Combo Família" class="produto-imagem">
+                    <h3>Combo Família</h3>
+                    <p>3 Contra Filé
+                        3 Frango bacon
+                        1 Coração
+                        1 Queijo
+                        2 Pão de alho
+                        1 Porção de mandioca
+                        Coca cola litros</p>
+                    <p><span>R$ 142,50</span> <del>R$ 150,00</del></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/espetos_file_queijo.jpg" alt="Espeto de Filé com Queijo" class="produto-imagem">
+                    <h3>Filé com Queijo (100g)</h3>
+                    <p><span>R$ 16,90</span></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/espetos_frango_bacon.jpg" alt="Espeto de Frango com Bacon" class="produto-imagem">
+                    <h3>Frango com Bacon (100g)</h3>
+                    <p><span>R$ 14,30</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="produtos" id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="produtos-container">
+                <div class="informacao">
+                    <img src="./images/cerveja_amstel.jpg" alt="Cerveja Amstel" class="produto-imagem">
+                    <h3>Cerveja Amstel (lata 350ml)</h3>
+                    <p><span>R$ 8,00</span></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/cerveja_skol.jpg" alt="Cerveja Skol" class="produto-imagem">
+                    <h3>Cerveja Skol (lata 350ml)</h3>
+                    <p><span>R$ 7,00</span></p>
+                </div>
+                <div class="informacao">
+                    <img src="./images/coca_cola.jpg" alt="Coca-Cola" class="produto-imagem">
+                    <h3>Coca-Cola (lata)</h3>
+                    <p><span>R$ 8,00</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arcade Beer. Todos os direitos reservados.</p>
+    </footer>
+    <script src="JS/hamburguer.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="icon" href="./images/1729530328691.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/pacman.css">
+    <link rel="stylesheet" href="css/hamburguer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="./images/1729530328691.png" alt="Logo" class="logo">
+                <h1 class="title">Bar Arcade Beer</h1>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="close-btn" onclick="closeMenu()">✖</button>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="about.html">Quem Somos?</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="produtos.html">Cardápio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="loader-wrapper">
+        <div class="packman"></div>
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Nossos Serviços</h2>
+            <div class="caixa-texto">
+            <p>Nós, do Arcade Beer, somos o melhor bar da cidade para quem curte games, rock, drinks e boa comida! Aqui, você encontra um universo voltado para os apaixonados por jogos, com torneios de videogame, área gamer liberada e muita diversão. Nossa vibe rock 'n' roll é garantida com festas animadas, DJs e shows que embalam as noites.</p>
+            <p>Além de muita música e jogos, também oferecemos uma seleção incrível de bebidas, incluindo drinks especiais e cervejas artesanais para acompanhar nosso cardápio de hambúrgueres e pratos artesanais deliciosos. E, claro, sempre temos eventos especiais, como nossa festa de Halloween, concursos de cosplay e muito mais.</p>
+            <p>Venha se divertir e viver essa experiência com a gente no Arcade Beer!</p>
+        </div>
+    </section>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/atracao1.jpg" alt="Atração 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/atracao2.jpg" alt="Atração 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/atracao3.jpg" alt="Atração 3">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/atracao4.jpg" alt="Atração 4">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/atracao5.jpg" alt="Atração 5">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/atracao6.jpg" alt="Atração 6">
+            </div>
+        </div>
+        <button class="carousel-control carousel-control-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-control carousel-control-next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arcade Beer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/servicos.js"></script>
+    <script src="JS/hamburguer.js"></script>
+</body>
+</html>
